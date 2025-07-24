@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Flashcard App</h1>
+
+    <select id="categorySelect">
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">JavaScript</option>
+    </select>
+
+    <div class="card-container" id="cardContainer"></div>
+
+    <div class="controls">
+      <button onclick="prevCard()">⬅️ Prev</button>
+      <button onclick="nextCard()">Next ➡️</button>
+      <button onclick="shuffleCards()">🔀 Shuffle</button>
+    </div>
+
+    <div class="score">
+      Score: <span id="score">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
